@@ -47,3 +47,26 @@ Run the following commands from within PowerShell.
 > docker rm (docker ps -a | Select-String "vsc-$name").ToString().Split()[0]
 > docker image rm (docker images | Select-String "vsc-$name").ToString().Split()[0]
 ```
+
+
+#### Windows Enabling Optional Features Hyper V and Virtualization
+###### Enable Windows Hyper-V
+1. Run the following command from the Command Prompt, PowerShell, or the "Run" dialog:
+```
+optionalfeatures
+```
+
+2. Once the Windows Feature appears, check the `Hyper-V` option from the list of optional features and Restart Windows 
+>![image](https://user-images.githubusercontent.com/356193/142332166-de394dd9-a330-4364-8927-c116e26cb77e.png)
+
+3. Another option is running the command as Admin `Windows PowerShell` which will enable the feature
+```
+DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
+```
+###### Enable BIOS Virtualization
+1. Open the BIOS setup on your computer by following your model instruction on Start-up
+2. Once the BIOS setup opens up, go to the `Advanced` tab. 
+3. Next, select the `Virtualization` from the list and make sure it is `Enabled`.
+4. Select `Yes` to save and exit the bios settings on your computer.
+
+Open the Docker app on your computer and try to open a new virtual machine.
