@@ -1,0 +1,23 @@
+{
+  "name": "interview-javascript-check",
+  "version": "1.0.0",
+  "description": "Interview JavaScript Check",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourceallies/interview-javascript-check.git"
+  },
+  "author": "SAI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sourceallies/interview-javascript-check/issues"
+  },
+  "homepage": "https://github.com/sourceallies/interview-javascript-check#readme",
+  "devDependencies": {
+    "jest": "29.7.0"
+  }
+}
