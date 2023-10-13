@@ -1,5 +1,5 @@
 for dir in */
-do
-    make install -C $dir
-    make test -C $dir
+do    
+    make init -C $dir
+    make verify -C $dir
 done
