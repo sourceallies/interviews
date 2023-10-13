@@ -10,9 +10,22 @@
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
 				"python.linting.mypyEnabled": true,
-				"extensions.ignoreRecommendations": true,
+        "extensions.ignoreRecommendations": true,
 				"workbench.startupEditor": "readme",
-				"redhat.telemetry.enabled": false
+				"redhat.telemetry.enabled": false,
+				"sqltools.connections": [
+					{
+						"previewLimit": 50,
+						"server": "localhost",
+						"port": 5432,
+						"driver": "PostgreSQL",
+						"name": "test",
+						"database": "postgres",
+						"username": "postgres",
+						"password": "postgres"
+					}
+				]
+			  }
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
@@ -25,7 +38,11 @@
 				"ms-dotnettools.csdevkit",
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"golang.go"
+				"golang.go",
+				"mtxr.sqltools",
+				"mtxr.sqltools-driver-pg",
+				"mtxr.sqltools-driver-mysql",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}

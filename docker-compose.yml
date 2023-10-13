@@ -1,0 +1,29 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:bookworm
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - PGDATA=/var/lib/postgresql/pgdata
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/pgdata
+
+  # AWS resources we use the SDK to interact with. Currently only S3.
+  localstack:
+    image: localstack/localstack:2.3.2
+    environment:
+      - LOCALSTACK_SERVICES=s3
+      - LS_LOG=info
+      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=dummyaccess
+      - AWS_SECRET_ACCESS_KEY=dummysecret
+      - SKIP_SSL_CERT_DOWNLOAD=1
+    volumes:
+      - ./localstack/data:/var/lib/localstack
+      - ./localstack/init.sh:/etc/localstack/init/ready.d/init.sh
+    ports:
+      - 4566:4566
