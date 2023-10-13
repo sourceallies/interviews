@@ -9,8 +9,10 @@
 				"python.languageServer": "Pylance",
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
-				"python.linting.mypyEnabled": true
-			  },
+				"python.linting.mypyEnabled": true,
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme"
+			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"streetsidesoftware.code-spell-checker",
