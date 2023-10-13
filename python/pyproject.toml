@@ -2,10 +2,9 @@
 name = "py_check"
 version = "0.1.0"
 description = ""
-authors = ["Stephen Onnen <sonnen@sourceallies.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "7.2.0"
