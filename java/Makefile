@@ -1,5 +1,5 @@
 init:
-	echo "no init step for Maven"
+	mvn install
 
 verify:
 	mvn test
