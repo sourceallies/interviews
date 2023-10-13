@@ -11,7 +11,8 @@
 				"vscjava.vscode-java-test",
 				"vscjava.vscode-maven",
 				"dbaeumer.vscode-eslint",
-				"orta.vscode-jest"
+				"orta.vscode-jest",
+				"ms-dotnettools.csharp"
 			]
 		}
 	}
