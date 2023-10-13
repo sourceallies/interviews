@@ -12,10 +12,5 @@ jobs:
     container: 
       image: mcr.microsoft.com/devcontainers/universal:focal
     steps:
-      - run: |
-          for dir in /*/;
-          do
-              echo "$dir"    
-              make init -C $dir
-              make verify -C $dir
-          done
+      - run: ./topLevelVerify.sh
+
