@@ -2,7 +2,7 @@ init:
 	npm ci
 
 verify:
-	echo "no tests set up yet"
+	npm run test
 
 run:
 	npm run dev
