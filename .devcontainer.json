@@ -19,6 +19,7 @@
 				"dbaeumer.vscode-eslint",
 				"orta.vscode-jest",
 				"ms-dotnettools.csharp",
+				"ms-dotnettools.csdevkit",
 				"ms-python.python",
 				"ms-python.vscode-pylance",
 				"golang.go"
