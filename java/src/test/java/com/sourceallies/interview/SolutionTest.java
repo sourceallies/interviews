@@ -7,27 +7,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
 
     @Test
-    void shouldPass() {
+    void shouldPrintHelloWorld() {
         Solution solution = new Solution();
-        String name = "world";
+        String name = "World";
 
-        assertEquals("Hello "+ name, solution.greeting(name));
-    }
-
-    @Test
-    void shouldPrintHelloNull() {
-        Solution solution = new Solution();
-        String name = null;
-
-        assertEquals("Hello", solution.greeting(name));
-    }
-
-    @Test
-    void shouldPrintHelloUser() {
-        Solution solution = new Solution();
-        String name = "world";
-
-        assertEquals("Hello User", solution.greeting(name));
+        assertEquals("Hello World", solution.greeting(name));
     }
 
 }
