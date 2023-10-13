@@ -36,7 +36,8 @@
 				"golang.go",
 				"mtxr.sqltools",
 				"mtxr.sqltools-driver-pg",
-				"mtxr.sqltools-driver-mysql"
+				"mtxr.sqltools-driver-mysql",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
