@@ -11,7 +11,8 @@
 				"python.linting.pylintEnabled": true,
 				"python.linting.mypyEnabled": true,
 				"extensions.ignoreRecommendations": true,
-				"workbench.startupEditor": "readme"
+				"workbench.startupEditor": "readme",
+				"redhat.telemetry.enabled": false
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
