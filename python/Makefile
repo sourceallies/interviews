@@ -5,5 +5,7 @@ test:
 run:
 	python py_check/main.py
 
-install:
+init:
 	poetry install
+
+.PHONY: test run init
