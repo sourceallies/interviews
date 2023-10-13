@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  verify-job:
+    runs-on: ubuntu-latest
+    container: 
+      image: mcr.microsoft.com/devcontainers/universal:focal
+    steps:
+      - run: |
+          for dir in */
+          do    
+              make init -C $dir
+              make verify -C $dir
+          done
