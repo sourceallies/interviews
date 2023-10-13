@@ -2,6 +2,7 @@
 name = "py_check"
 version = "0.1.0"
 description = ""
+authors = ["Jake Williamson"]
 
 [tool.poetry.dependencies]
 python = "^3.10.8"
