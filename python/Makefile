@@ -6,7 +6,7 @@ run:
 	python py_check/main.py
 
 init:
-	./setup.sh;
+	pip3 --disable-pip-version-check --no-cache-dir install poetry;
 	poetry install;
 
 .PHONY: verify run init
