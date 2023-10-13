@@ -1,7 +1,7 @@
 {
 	"name": "Mono",
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
-	"postCreateCommand": "./init.sh",
+	"postStartCommand": "./init.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {
