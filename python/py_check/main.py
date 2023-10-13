@@ -13,7 +13,7 @@ def get_foo() -> str:
 
 
 def get_bar() -> str:
-    return FooBar.baz
+    return FooBar.bar
 
 
 def get_baz() -> str:
