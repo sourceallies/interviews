@@ -14,7 +14,8 @@ jobs:
     steps:
       - run: |
           for dir in */
-          do    
+          do
+              echo "$dir"    
               make init -C $dir
               make verify -C $dir
           done
