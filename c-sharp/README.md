@@ -27,7 +27,7 @@ Make the tests pass. Only update code in the `Generator` class.
 When you run the application, you should see `Hello World` printed to the console. Run the application as follows:
 
 ```
-$ dotnet run -p Check/Check.csproj
+$ dotnet run --project Check/Check.csproj
 ```
 
 ## Future Enhancements

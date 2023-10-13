@@ -4,12 +4,12 @@ namespace Check
     {
         public static string GetGreeting()
         {
-            return string.Empty;
+            return "Hello";
         }
 
         public static string GetName()
         {
-            return string.Empty;
+            return "World";
         }
     }
 }
