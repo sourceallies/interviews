@@ -1,0 +1,14 @@
+{
+	"name": "Java",
+	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"ms-vsliveshare.vsliveshare",
+				"streetsidesoftware.code-spell-checker"
+			]
+		}
+	}
+}
