@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Taken from https://unix.stackexchange.com/questions/27139/script-to-change-current-directory-cd-pwd
+#
 # Renders a text based list of options that can be selected by the
 # user using up, down and enter keys and returns the chosen option.
 #
