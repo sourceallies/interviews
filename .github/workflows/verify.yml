@@ -13,7 +13,7 @@ jobs:
       image: mcr.microsoft.com/devcontainers/universal:focal
     steps:
       - run: |
-          for dir in '*/'
+          for dir in /*/;
           do
               echo "$dir"    
               make init -C $dir
