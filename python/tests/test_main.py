@@ -1,8 +1,8 @@
-from py_check.mainn import get_bar, get_baz, get_foo
+from py_check.main import get_bar, get_baz, get_foo
 
 
 def test_get_foo_should_return_foo():
-    assert get_foo() == "foo "
+    assert get_foo() == "foo"
 
 
 def test_get_bar_should_return_bar():
