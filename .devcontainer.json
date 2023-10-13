@@ -3,7 +3,13 @@
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
 	"customizations": {
 		"vscode": {
-			"settings": {},
+			"settings": {
+				"python.formatting.provider": "black",
+				"python.languageServer": "Pylance",
+				"python.linting.enabled": true,
+				"python.linting.pylintEnabled": true,
+				"python.linting.mypyEnabled": true
+			  },
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"streetsidesoftware.code-spell-checker",
@@ -11,7 +17,9 @@
 				"vscjava.vscode-java-test",
 				"vscjava.vscode-maven",
 				"dbaeumer.vscode-eslint",
-				"orta.vscode-jest"
+				"orta.vscode-jest",
+				"ms-python.python",
+				"ms-python.vscode-pylance"
 			]
 		}
 	}
