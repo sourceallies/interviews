@@ -1,6 +1,7 @@
 {
 	"name": "Mono",
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"postAttachCommand": "source ./init.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -9,6 +10,9 @@
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
 				"python.linting.mypyEnabled": true,
+        "extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme",
+				"redhat.telemetry.enabled": false,
 				"sqltools.connections": [
 					{
 						"previewLimit": 50,
@@ -21,7 +25,8 @@
 						"password": "postgres"
 					}
 				]
-			  },
+			  }
+			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"streetsidesoftware.code-spell-checker",
