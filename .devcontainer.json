@@ -18,6 +18,7 @@
 				"vscjava.vscode-maven",
 				"dbaeumer.vscode-eslint",
 				"orta.vscode-jest",
+				"ms-dotnettools.csharp",
 				"ms-python.python",
 				"ms-python.vscode-pylance",
 				"golang.go"
