@@ -1,21 +1,11 @@
 {
-  "name": "interview-typescript-check",
+  "name": "typescript-interview",
   "version": "1.0.0",
-  "description": "Template for typescript interviews",
+  "description": "TypeScript Interview",
   "type": "module",
   "scripts": {
     "test": "jest --testRegex .*.spec.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sourceallies/interview-typescript-template.git"
-  },
-  "author": "SAI",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sourceallies/interview-typescript-template/issues"
-  },
-  "homepage": "https://github.com/sourceallies/interview-typescript-template#readme",
   "devDependencies": {
     "@types/jest": "^29.5.1",
     "jest": "^29.5.0",
