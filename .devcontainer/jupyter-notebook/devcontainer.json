@@ -1,0 +1,31 @@
+{
+	"name": "Jupyter Notebook",
+	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"postCreateCommand": "cd jupyter-notebook && make init",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"python": {
+					"editor.defaultFormatter": "ms-python.black-formatter"
+				  },
+				"python.languageServer": "Pylance",
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme"
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"ms-python.pylint",
+				"ms-python.mypy-type-checker",
+				"matangover.mypy",
+				"ms-toolsai.jupyter"
+			]
+		}
+	}
+}

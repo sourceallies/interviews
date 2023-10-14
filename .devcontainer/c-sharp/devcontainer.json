@@ -1,0 +1,22 @@
+{
+	"name": "C-Sharp",
+	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"postCreateCommand": "cd c-sharp && make init",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme"
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"ms-dotnettools.csharp",
+				"ms-dotnettools.csdevkit"
+			]
+		}
+	}
+}

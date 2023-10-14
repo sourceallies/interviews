@@ -1,0 +1,23 @@
+{
+	"name": "Default",
+	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	// "containerEnv": {
+    //   "DISABLE_JAVA_BUILD": "true"
+  	// }, This prevents Java from defaulting to Java 11. At time of writing it will then go to 17.
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme",
+				"redhat.telemetry.enabled": false
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare"
+			]
+		}
+	}
+}
