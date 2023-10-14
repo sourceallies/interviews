@@ -68,7 +68,7 @@ function select_option {
 
 OPTIONS=(*/)
 NUM_OPTIONS=${#OPTIONS[@]}
-for i in $(seq 0 $NUM_OPTIONS); do
+for i in $(seq 0 $NUM_OPTIONS-1); do
     OPTIONS[$i]=$(basename "${OPTIONS[$i]}")
 done
 
