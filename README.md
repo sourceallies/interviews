@@ -1,5 +1,7 @@
 # Source Allies Interviews
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=704560088&skip_quickstart=true)
+
 This repository contains information about the Source Allies pairing session process.
 
 Please see our [careers page](https://www.sourceallies.com/careers/) if you are interested in working on our team!
@@ -48,29 +50,23 @@ You can also use the dev containers extension for your local VSCode installation
 
 ### Using Codespaces
 
-If using codespaces, navigate to the `Code` button while on your desired branch, and option the Codespaces tab.
+If using codespaces click this badge.
 
-![Codespaces Button](resources/media/CodespacesButton.png)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=704560088&skip_quickstart=true)
 
-Here, you have a couple of options.
+Here, you have a few options.
 
-__Option 1__: Use a project specific devcontainer.  This will automatically add extensions related to this project, as well as navigate to, and do any prep work like runnnig mvn, npm, or poetry install commands via `make init`.  This is recommended if you are only working in 1 project, but requires a couple more clicks to find.
+__Option 1__: Use a project specific devcontainer.  This will automatically add extensions related to this project, as well do any prep work like running `mvn`, `npm`, or `poetry install` commands via `make init`.  This is recommended if you are only working in 1 project, but requires a couple more clicks to find. You will need to navigate to the desired folder and you should be able to run `make verify` to see test output.
 
-![Launch Codespaces Project Devcontainer1](resources/media/LaunchCodespaceProjectDevContainer1.png)
+__Option 2__: Use the `Default` devcontainer.  If you use this option, you will have all the technology you need to run anything in the repo, but you will have no extensions installed by default except Live Share, and will need to navigate to your desired project and run `make init` to perform any setup.
 
-![Launch Codespaces Project Devcontainer2](resources/media/LaunchCodespaceProjectDevContainer2.png)
-
-__Option 2__: Use the default devcontainer.  If you use this option, you will have all the technology you need to run anything in the repo, but you will have no extensions installed by default except Live Share, and will need to navigate to your desired project and run `make init` to perform any setup.
-
-![Launch Codespaces Default Devcontainer](resources/media/LaunchCodespaceDefaultDevContainer.png)
+![Launch Codespace](resources/media/LaunchCodespace.png)
 
 After you choose either option you should be greeted with a very short building process, followed by VSCode launching in a new broswer tab.
 
 ![Codespace Launching](resources/media/CodespaceLaunching.png)
 
-If you chose Option 1, extensions will now initialize, and an init script will run, preparing your project.
-
-![Init Script](resources/media/InitScript.png)
+If you chose Option 1, extensions will now initialize, and an init script will run in the background, preparing your project.
 
 You are now ready to start the pairing session!
 
