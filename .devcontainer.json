@@ -10,11 +10,10 @@
 				"liveshare.allowGuestTaskControl": true,
 				"liveshare.languages.allowGuestCommandControl": true,
 				"liveshare.publishWorkspaceInfo": true,
-				"python.formatting.provider": "black",
+				"python": {
+					"editor.defaultFormatter": "ms-python.black-formatter"
+				  },
 				"python.languageServer": "Pylance",
-				"python.linting.enabled": true,
-				"python.linting.pylintEnabled": true,
-				"python.linting.mypyEnabled": true,
 				"extensions.ignoreRecommendations": true,
 				"workbench.startupEditor": "readme",
 				"redhat.telemetry.enabled": false,
@@ -46,7 +45,11 @@
 				"mtxr.sqltools",
 				"mtxr.sqltools-driver-pg",
 				"mtxr.sqltools-driver-mysql",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"ms-python.black-formatter",
+				"ms-python.pylint",
+				"ms-python.mypy-type-checker",
+				"matangover.mypy"
 			]
 		}
 	}
