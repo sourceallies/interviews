@@ -23,12 +23,7 @@ jobs:
         working-directory:  '/__w/interview-mono-repo/interview-mono-repo'
         shell: bash
       - name: Init and Verify Languages
-        run: |
-          for dir in */
-          do    
-              make init -C $dir
-              make verify -C $dir
-          done
+        run: bash ./topLevelVerify.sh
         working-directory:  '/__w/interview-mono-repo/interview-mono-repo'
         shell: bash
 
