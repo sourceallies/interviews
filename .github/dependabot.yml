@@ -1,0 +1,38 @@
+version: 2
+updates:
+  - package-ecosystem: "gomod"
+    directory: "/go"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "maven"
+    directory: "/java"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/javascript"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/typescript"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/typescript-react"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "pip"
+    directory: "/python"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "pip"
+    directory: "/jupyter-notebook"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "nuget"
+    directory: "/c-sharp/Check"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "nuget"
+    directory: "/c-sharp/Check.Tests"
+    schedule:
+      interval: "monthly"
