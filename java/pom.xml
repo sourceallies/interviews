@@ -5,10 +5,10 @@
 	<groupId>com.sourceallies</groupId>
 	<artifactId>interview</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Interview Problem Template with Maven Build</name>
-	<description>Interview Problem Template with Maven Build</description>
+	<name>Interview Problem</name>
+	<description>Interview Problem with Maven</description>
 	<properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <maven-surefire-plugin.version>3.0.0-M6</maven-surefire-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

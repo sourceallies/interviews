@@ -2,6 +2,9 @@
 	"name": "Mono",
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
 	"postAttachCommand": "source ./init.sh",
+	"containerEnv": {
+        "DISABLE_JAVA_BUILD": "true"
+    },
 	"customizations": {
 		"vscode": {
 			"settings": {
