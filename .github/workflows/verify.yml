@@ -15,5 +15,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
       - name: Init and Verify Languages
-        run: bash resources/topLevelVerify.sh
+        run: |
+          for dir in */
+          do    
+              make init -C $dir
+              make verify -C $dir
+          done
 
