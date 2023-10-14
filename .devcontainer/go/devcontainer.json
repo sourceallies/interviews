@@ -1,7 +1,7 @@
 {
-	"name": "C-Sharp",
+	"name": "Go",
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
-	"postCreateCommand": "cd c-sharp && make init",
+	"postCreateCommand": "cd go && make init",
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -14,8 +14,7 @@
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
-				"ms-dotnettools.csharp",
-				"ms-dotnettools.csdevkit",
+				"golang.go",
 				"ms-azuretools.vscode-docker"
 			]
 		}

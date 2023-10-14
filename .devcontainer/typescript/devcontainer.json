@@ -1,7 +1,7 @@
 {
-	"name": "C-Sharp",
+	"name": "Typescript",
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
-	"postCreateCommand": "cd c-sharp && make init",
+	"postCreateCommand": "cd typescript && make init",
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -14,9 +14,9 @@
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
-				"ms-dotnettools.csharp",
-				"ms-dotnettools.csdevkit",
-				"ms-azuretools.vscode-docker"
+				"dbaeumer.vscode-eslint",
+				"ms-azuretools.vscode-docker",
+				"firsttris.vscode-jest-runner"
 			]
 		}
 	}
