@@ -1,5 +1,5 @@
 {
-	"name": "Mono",
+	"name": "Default",
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
 	// "containerEnv": {
     //   "DISABLE_JAVA_BUILD": "true"
