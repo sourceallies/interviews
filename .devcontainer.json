@@ -32,7 +32,6 @@
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
-				"streetsidesoftware.code-spell-checker",
 				"vscjava.vscode-java-pack",
 				"vscjava.vscode-java-test",
 				"vscjava.vscode-maven",
