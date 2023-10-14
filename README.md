@@ -48,19 +48,29 @@ You can also use the dev containers extension for your local VSCode installation
 
 ### Using Codespaces
 
-If using codespaces, all you need to do is open the branch you care about in github (most likely main), and navigate to the `Code` button. 
+If using codespaces, navigate to the `Code` button while on your desired branch, and option the Codespaces tab.
 
-![How To Launch Codespaces](resources/media/LaunchCodespace.png)
+![Codespaces Button](resources/media/CodespacesButton.png)
 
-You should be greeted with a very short building process, followed by VSCode launching in a new broswer tab.  
+Here, you have a couple of options.
+
+__Option 1__: Use a project specific devcontainer.  This will automatically add extensions related to this project, as well as navigate to, and do any prep work like runnnig mvn, npm, or poetry install commands via `make init`.  This is recommended if you are only working in 1 project, but requires a couple more clicks to find.
+
+![Launch Codespaces Project Devcontainer1](resources/media/LaunchCodespaceProjectDevContainer1.png)
+
+![Launch Codespaces Project Devcontainer2](resources/media/LaunchCodespaceProjectDevContainer2.png)
+
+__Option 2__: Use the default devcontainer.  If you use this option, you will have all the technology you need to run anything in the repo, but you will have no extensions installed by default except Live Share, and will need to navigate to your desired project and run `make init` to perform any setup.
+
+![Launch Codespaces Default Devcontainer](resources/media/LaunchCodespaceDefaultDevContainer.png)
+
+After you choose either option you should be greeted with a very short building process, followed by VSCode launching in a new broswer tab.
 
 ![Codespace Launching](resources/media/CodespaceLaunching.png)
 
-After this launches, extensions will need to initialize, and an init script will run that asks you to choose the language you would like to work in:
+If you chose Option 1, extensions will now initialize, and an init script will run, preparing your project.
 
 ![Init Script](resources/media/InitScript.png)
-
-From here, simply select your desired language. The script will take care of navigating to the directory, doing any prep work like runnnig mvn, npm, or poetry install commands, then run the test suite for that project. 
 
 You are now ready to start the pairing session!
 
@@ -80,7 +90,7 @@ Each project is kept extremely simple.  There is usually a README describing the
 
 # For the Interviewer
 
-Typically, the interviewer will start the code space, then the interviewee will join via liveshare, which can easily be launched on the web or on their local VSCode. It is recommended to start up the devcontainer prior to the pairing session to let everything load (If using the default devcontainer, it can take a couple of minutes to fully load all extensions).
+Typically, the interviewer will start the code space, then the interviewee will join via liveshare, which can easily be launched on the web or on their local VSCode. It is recommended to start up the devcontainer prior to the pairing session to let everything load (At most, it can take up to 2 minutes to fully load all extensions).
 
 Every github user has 120 free core hours of codespaces available, which will be hard to go over unless you are using codespaces outside of interviewing. If you would like to avoid using codespaces, you are welcome to get this repo running locally using VSCode, docker, and the remote containers extension.
 
