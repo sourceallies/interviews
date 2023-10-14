@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  verify-job:
+    runs-on: ubuntu-latest
+    container: 
+      image: mcr.microsoft.com/devcontainers/universal:focal
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Init and Verify Languages
+        run: bash ./topLevelVerify.sh
+
