@@ -72,8 +72,16 @@ To launch both services you can run: `docker compose up -d`, or to launch one, s
 
 ## What is in each project?
 
-Each project is kept extremely simple.  There are usualy a main class or logic or some kind, as well as a test to make sure this logic can execute correctly.  Depending on the framework or language, there may also be files to set up required libraries, such as a pom.xml, package.json, or pyproject.toml.  In addition, each project contains a `Make` file that will let you run familiar commands, regardless of current language:
+Each project is kept extremely simple.  There is usually a README describing the project tech stack, a main class or logic of some kind, as well as a test to make sure this logic can execute correctly.  Depending on the framework or language, there may also be files to set up required libraries, such as a pom.xml, package.json, or pyproject.toml.  In addition, each project contains a `Make` file that will let you run familiar commands, regardless of current language:
 
 - `make init` - Run any setup that this project may need, like installation scripts.  This is already done for you by the baseline init script when the codespace starts, but can be leveraged when you move to other projects if you want.
 - `make verify` -  Run the built in tests for this project.
 - `make run` - OPTIONAL: When present, this is to run the project in interactive mode, like when a server is launched using Spring Boot or React.
+
+# For the Interviewer
+
+Typically, the interviewer will start the code space, then the interviewee will join via liveshare, which can easily be launched on the web or on their local VSCode. It is recommended to start up the devcontainer prior to the pairing session to let everything load (If using the default devcontainer, it can take a couple of minutes to fully load all extensions).
+
+Every github user has 120 free core hours of codespaces available, which will be hard to go over unless you are using codespaces outside of interviewing. If you would like to avoid using codespaces, you are welcome to get this repo running locally using VSCode, docker, and the remote containers extension.
+
+As always, feel free to reach out if anything in the process is causing problems or concern.
