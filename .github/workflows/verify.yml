@@ -17,13 +17,7 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-      - name: Debug Filepath
-        run: |
-          echo "$PWD"
-        working-directory:  '/__w/interview-mono-repo/interview-mono-repo'
-        shell: bash
       - name: Init and Verify Languages
         run: bash ./topLevelVerify.sh
         working-directory:  '/__w/interview-mono-repo/interview-mono-repo'
-        shell: bash
 
