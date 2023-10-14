@@ -16,5 +16,4 @@ jobs:
         uses: actions/checkout@v4
       - name: Init and Verify Languages
         run: bash ./topLevelVerify.sh
-        working-directory:  '/__w/interview-mono-repo/interview-mono-repo'
 
