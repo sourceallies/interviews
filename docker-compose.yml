@@ -22,6 +22,7 @@ services:
       - AWS_ACCESS_KEY_ID=dummyaccess
       - AWS_SECRET_ACCESS_KEY=dummysecret
       - SKIP_SSL_CERT_DOWNLOAD=1
+      - SQS_ENDPOINT_STRATEGY=path
     volumes:
       - ./localstack/data:/var/lib/localstack
       - ./localstack/init.sh:/etc/localstack/init/ready.d/init.sh
