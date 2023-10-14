@@ -15,7 +15,6 @@
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"dbaeumer.vscode-eslint",
-				"ms-azuretools.vscode-docker",
 				"firsttris.vscode-jest-runner"
 			]
 		}

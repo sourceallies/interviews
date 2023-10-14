@@ -20,7 +20,6 @@
 				"ms-vsliveshare.vsliveshare",
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"ms-azuretools.vscode-docker",
 				"ms-python.black-formatter",
 				"ms-python.pylint",
 				"ms-python.mypy-type-checker",

@@ -14,8 +14,7 @@
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
-				"golang.go",
-				"ms-azuretools.vscode-docker"
+				"golang.go"
 			]
 		}
 	}

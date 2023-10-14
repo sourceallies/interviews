@@ -16,8 +16,7 @@
 				"redhat.telemetry.enabled": false
 			},
 			"extensions": [
-				"ms-vsliveshare.vsliveshare",
-				"ms-azuretools.vscode-docker"
+				"ms-vsliveshare.vsliveshare"
 			]
 		}
 	}
