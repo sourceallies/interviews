@@ -1,10 +1,13 @@
-# TypeScript + React + Vite Project
+# Java Spring Boot Project
 
 ## Tech Stack
-- TypeScript 5
-- React 18
-- Vite 4
-- React Testing Library 8
+- Java 17
+- JUnit 5
+- Spring Boot 3.1   
+    - Web
+    - JPA
+    - Lombok
+- Gradle
 
 ## Common Commands
 - `make init`
