@@ -1,8 +1,7 @@
 {
 	"name": "C-Sharp",
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
-	"postAttachCommand": "make init",
-	"workspaceMount": "c-sharp",
+	"postAttachCommand": "cd c-sharp && make init",
 	"customizations": {
 		"vscode": {
 			"settings": {
