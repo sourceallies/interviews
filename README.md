@@ -25,7 +25,7 @@ This document will be a chance for you to tell stories and share with Source All
 
 ## Coding Exercise
 
-It’s a race against the clock on our custom built algorithmic coding exercise via HackerRank to get a better glimpse of your technical capabilities. The test consists of front and backend question options, and a variety of languages, frameworks, and libraries to utilize. Are you up for the challenge?
+This is an algorithmic coding exercise via HackerRank to get a better glimpse of your technical capabilities. The test consists of front and backend question options, and a variety of languages, frameworks, and libraries to utilize. Are you up for the challenge?
 
 ## Pairing Session
 
@@ -33,7 +33,7 @@ The purpose of this interview is to further gauge your technical ability and to 
 
 We use a project to guide our discussion, but we don't have to finish the project. We only need to get far enough along to get a good sense of your technical ability.
 
-To create a positive experience for virtual pairing sessions, please have a reliable camera, audio, and sound ready.
+To create a positive experience for virtual pairing sessions, please have reliable camera and audio ready.
 
 ## How to use this repo for the pairing session
 
@@ -72,4 +72,8 @@ Take launch both services you can run: `docker compose up -d`, or to launch one,
 
 ## What is in each project?
 
-Each project is kept extremely simple.  There are usualy a main class or logic or some kind, as well as a test to make sure this logic can execute correctly.  Depending on the framework or language, there may also be files to set up required libraries, such as a pom.xml, package.json, or pyproject.toml.
+Each project is kept extremely simple.  There are usualy a main class or logic or some kind, as well as a test to make sure this logic can execute correctly.  Depending on the framework or language, there may also be files to set up required libraries, such as a pom.xml, package.json, or pyproject.toml.  In addition, each project contains a `Make` file that will let you run familiar commands, regardless of current language:
+
+- `make init` - Run any setup that this project may need, like installation scripts.  This is already done for you by the baseline init script when the codespace starts, but can be leveraged when you move to other projects if you want.
+- `make verify` -  Run the built in tests for this project.
+- `make run` - OPTIONAL: When present, this is to run the project in interactive mode, like when a server is launched using Spring Boot or React.
