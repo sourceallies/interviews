@@ -5,3 +5,9 @@ describe("Hello", () => {
     expect('Hello World').toBe(hello("World"));
   });
 });
+
+describe("Fails", () => {
+  it("should fail", () => {
+    expect(true).toBe(false);
+  })
+})
