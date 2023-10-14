@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# To be run from project root
+
 pip install inquirer
 
 # Since we need to present a user interface through stdout, we write

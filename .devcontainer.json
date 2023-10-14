@@ -3,8 +3,9 @@
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
 	"postAttachCommand": "source ./init.sh",
 	"containerEnv": {
-        "DISABLE_JAVA_BUILD": "true"
-    },
+      "DISABLE_JAVA_BUILD": "true"
+  },
+	"postAttachCommand": "source resources/init.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -35,7 +36,6 @@
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
-				"streetsidesoftware.code-spell-checker",
 				"vscjava.vscode-java-pack",
 				"vscjava.vscode-java-test",
 				"vscjava.vscode-maven",
