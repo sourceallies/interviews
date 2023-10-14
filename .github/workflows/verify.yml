@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+      - name: Debug Filepath
+        run: |
+          echo "$PWD"
       - name: Init and Verify Languages
         run: |
           for dir in */
@@ -24,4 +27,5 @@ jobs:
               make init -C $dir
               make verify -C $dir
           done
+        shell: bash
 
