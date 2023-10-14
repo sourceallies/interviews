@@ -15,5 +15,13 @@ jobs:
     container: 
       image: mcr.microsoft.com/devcontainers/universal:focal
     steps:
-      - run: ./topLevelVerify.sh
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Init and Verify Languages
+        run: |
+          for dir in */
+          do    
+              make init -C $dir
+              make verify -C $dir
+          done
 
