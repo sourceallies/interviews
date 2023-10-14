@@ -53,7 +53,8 @@
 				"ms-python.pylint",
 				"ms-python.mypy-type-checker",
 				"matangover.mypy",
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"firsttris.vscode-jest-runner"
 			]
 		}
 	}
