@@ -56,7 +56,7 @@ If using codespaces click this badge.
 
 Here, you have a few options.
 
-__Option 1__: Use a project specific devcontainer.  This will automatically add extensions related to this project, as well do any prep work like running `mvn`, `npm`, or `poetry install` commands via `make init`.  This is recommended if you are only working in 1 project, but requires a couple more clicks to find. You will need to navigate to the desired folder and you should be able to run `make verify` to see test output.
+__Option 1__: Use a project specific devcontainer.  This will automatically add extensions related to this project, as well do any prep work like running `mvn`, `npm`, or `poetry install` commands via `make init`.  This is recommended if you are only working in 1 project. You will need to navigate to the desired project folder and you should be able to run `make verify` to see test output.
 
 __Option 2__: Use the `Default` devcontainer.  If you use this option, you will have all the technology you need to run anything in the repo, but you will have no extensions installed by default except Live Share, and will need to navigate to your desired project and run `make init` to perform any setup.
 
