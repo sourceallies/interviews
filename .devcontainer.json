@@ -5,6 +5,7 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
+				"java.server.launchMode": "Standard",
 				"liveshare.allowGuestDebugControl": true,
 				"liveshare.allowGuestTaskControl": true,
 				"liveshare.languages.allowGuestCommandControl": true,
