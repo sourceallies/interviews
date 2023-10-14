@@ -20,6 +20,8 @@ jobs:
       - name: Debug Filepath
         run: |
           echo "$PWD"
+        working-directory:  '/__w/interview-mono-repo/interview-mono-repo'
+        shell: bash
       - name: Init and Verify Languages
         run: |
           for dir in */
@@ -27,5 +29,6 @@ jobs:
               make init -C $dir
               make verify -C $dir
           done
+        working-directory:  '/__w/interview-mono-repo/interview-mono-repo'
         shell: bash
 
