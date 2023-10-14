@@ -5,12 +5,16 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
 				"python.formatting.provider": "black",
 				"python.languageServer": "Pylance",
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
 				"python.linting.mypyEnabled": true,
-        			"extensions.ignoreRecommendations": true,
+				"extensions.ignoreRecommendations": true,
 				"workbench.startupEditor": "readme",
 				"redhat.telemetry.enabled": false,
 				"sqltools.connections": [
