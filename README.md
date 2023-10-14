@@ -68,7 +68,7 @@ You are now ready to start the pairing session!
 
 Because pairing sessions can widely vary, we have tried to include many options of languages, and well as common frameworks. In addition, there is a [docker-compose.yml](docker-compose.yml) file in the root of this directory that can easily be used to launch a Postgres database, an instance of Localstack, or both.  This is so you can integrate with these services from your pairing project if desired.
 
-Take launch both services you can run: `docker compose up -d`, or to launch one, simply add the name of the service as it is defined in the compose file.
+To launch both services you can run: `docker compose up -d`, or to launch one, simply add the name of the service as it is defined in the compose file.
 
 ## What is in each project?
 
