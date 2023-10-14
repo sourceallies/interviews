@@ -1,9 +1,6 @@
 {
 	"name": "Default",
 	"image": "mcr.microsoft.com/devcontainers/universal:focal",
-	// "containerEnv": {
-    //   "DISABLE_JAVA_BUILD": "true"
-  	// }, This prevents Java from defaulting to Java 11. At time of writing it will then go to 17.
 	"customizations": {
 		"vscode": {
 			"settings": {
