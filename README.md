@@ -88,7 +88,7 @@ Each project is kept extremely simple.  There is usually a README describing the
 
 Typically, the interviewer will start the codespace, then the interviewee will join via liveshare, which can easily be launched on the web or on their local VSCode. It is recommended to start up the devcontainer prior to the pairing session to let everything load (At most, it can take up to 2 minutes to fully load all extensions).
 
-Every GitHub user has 120 free core hours of codespaces available, which will be hard to go over unless you are using codespaces outside of interviewing. If you would like to avoid using codespaces, you are welcome to get this repo running locally using VSCode, docker, and the remote containers extension.
+Every GitHub user has 120 free core hours of codespaces available per month, which will be hard to go over unless you are using codespaces outside of interviewing. You should not have to worry about being charged for usage unless you [explicitly set a spending limit](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/managing-the-spending-limit-for-github-codespaces). If you would like to avoid using codespaces, you are welcome to get this repo running locally using VSCode, docker, and the remote containers extension.
 
 If you decide to use codespaces, we would encourage you to delete your running codespace after the interview by visiting [this link](https://github.com/codespaces/). *Note:* deleting the codespace will remove all files so make sure you've finished your review prior to deleting the codespace.
 
