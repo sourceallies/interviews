@@ -1,6 +1,6 @@
 {
 	"name": "Go",
-	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"image": "mcr.microsoft.com/devcontainers/universal:2.5.7-focal",
 	"postCreateCommand": "cd go && make init",
 	"customizations": {
 		"vscode": {

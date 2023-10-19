@@ -1,6 +1,6 @@
 {
 	"name": "Java",
-	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"image": "mcr.microsoft.com/devcontainers/universal:2.5.7-focal",
 	"containerEnv": {
       "DISABLE_JAVA_BUILD": "true"
 	},
