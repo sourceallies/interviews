@@ -1,6 +1,6 @@
 {
 	"name": "Jupyter Notebook",
-	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"image": "mcr.microsoft.com/devcontainers/universal:2.5.7-focal",
 	"postCreateCommand": "cd jupyter-notebook && make init",
 	"customizations": {
 		"vscode": {
