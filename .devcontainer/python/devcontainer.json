@@ -1,6 +1,6 @@
 {
 	"name": "Python",
-	"image": "mcr.microsoft.com/devcontainers/universal:2.5.7-focal",
+	"image": "mcr.microsoft.com/devcontainers/universal:focal",
 	"postCreateCommand": "cd python && make init",
 	"customizations": {
 		"vscode": {

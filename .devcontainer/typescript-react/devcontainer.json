@@ -1,6 +1,6 @@
 {
 	"name": "Typescript React",
-	"image": "mcr.microsoft.com/devcontainers/universal:2.5.7-focal",
+	"image": "mcr.microsoft.com/devcontainers/universal:focal",
 	"postCreateCommand": "cd typescript-react && make init",
 	"customizations": {
 		"vscode": {
