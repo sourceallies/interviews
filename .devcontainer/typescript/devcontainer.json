@@ -1,6 +1,6 @@
 {
 	"name": "Typescript",
-	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"image": "mcr.microsoft.com/devcontainers/universal:2-focal",
 	"postCreateCommand": "cd typescript && make init",
 	"customizations": {
 		"vscode": {

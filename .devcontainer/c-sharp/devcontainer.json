@@ -1,6 +1,6 @@
 {
 	"name": "C-Sharp",
-	"image": "mcr.microsoft.com/devcontainers/universal:focal",
+	"image": "mcr.microsoft.com/devcontainers/universal:2-focal",
 	"postCreateCommand": "cd c-sharp && make init",
 	"customizations": {
 		"vscode": {
