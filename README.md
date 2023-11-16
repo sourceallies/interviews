@@ -93,3 +93,7 @@ Every GitHub user has 120 free core hours of codespaces available per month, whi
 If you decide to use codespaces, we would encourage you to delete your running codespace after the interview by visiting [this link](https://github.com/codespaces/). *Note:* deleting the codespace will remove all files so make sure you've finished your review prior to deleting the codespace.
 
 As always, feel free to reach out if anything in the process is causing problems or concern.
+
+# Troubleshooting
+
+If something doesn't seem quite right with the codespace once it's up and running you can type `devcontainer-info` in a console to see some information about the current configuration. `devcontainer-info` should tell you the version of the image you're running, source code location, build timestamps, and a link to a [Markdown file](https://github.com/devcontainers/images/blob/main/src/universal/history/2.5.8.md) showing what versions of different tools are installed on the current image.
