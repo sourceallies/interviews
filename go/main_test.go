@@ -1,10 +1,12 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
 
 func TestSayHello(t *testing.T) {
 	result := SayHello("world!")
-	if result != "Hello world!" {
-		t.Fatalf("Expected Hello world!, got=%s", result)
-	}
+	assert.Equal(t, "Hello world!", result)
 }
