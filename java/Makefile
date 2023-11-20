@@ -1,4 +1,5 @@
 init:
+	./setup-java.sh
 	mvn install
 
 verify:
