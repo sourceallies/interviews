@@ -1,4 +1,5 @@
 init:
+	./setup-java.sh
 	gradle build
 
 verify:

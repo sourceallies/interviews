@@ -5,7 +5,7 @@ spring:
       - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
       - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   datasource:
-  # Configured to point to the docker-compose postgres DB container by default
+    # Configured to point to the docker-compose postgres DB container by default
     username: postgres
     password: DB_PASSWORD:postgres
     driver-class-name: org.postgresql.Driver

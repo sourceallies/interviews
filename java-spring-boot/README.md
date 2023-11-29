@@ -1,9 +1,9 @@
 # Java Spring Boot Project
 
 ## Tech Stack
-- Java 17
+- Java 21
 - JUnit 5
-- Spring Boot 3.1   
+- Spring Boot 3.2.0 
     - Web
     - JPA
     - Lombok
