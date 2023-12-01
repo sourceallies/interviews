@@ -21,7 +21,7 @@
     "@typescript-eslint/parser": "^6.13.1",
     "@vitejs/plugin-react": "^4.0.3",
     "@testing-library/jest-dom": "^6.1.4",
-    "@testing-library/react": "^14.0.0",
+    "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.4.3",
     "eslint": "^8.52.0",
     "eslint-plugin-react-hooks": "^4.6.0",
