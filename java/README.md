@@ -1,7 +1,7 @@
 # Java Project
 
 ## Tech Stack
-- Java 17
+- Java 21
 - JUnit 5
 - Maven
 
