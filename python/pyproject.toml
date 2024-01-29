@@ -13,7 +13,7 @@ pylint = "3.0.2"
 coverage = "7.4.0"
 mypy = "1.8.0"
 black = "23.12.1"
-flake8 = "6.1.0"
+flake8 = "7.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.4.0"]
