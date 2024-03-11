@@ -1,7 +1,10 @@
 init:
-	mvn install
+	gradle build
 
 verify:
-	mvn test
+	gradle test
 
-.PHONY: init verify
+run:
+	gradle bootRun
+
+.PHONY: init verify run
