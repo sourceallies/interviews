@@ -14,13 +14,6 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
-  - package-ecosystem: "gradle"
-    directory: "/java-spring-boot"
-    schedule:
-      interval: "monthly"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-patch"]
   - package-ecosystem: "npm"
     directory: "/javascript"
     schedule:

@@ -21,7 +21,8 @@
 				"ms-vsliveshare.vsliveshare",
 				"vscjava.vscode-java-pack",
 				"vscjava.vscode-java-test",
-				"vscjava.vscode-maven"
+				"vscjava.vscode-gradle",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}

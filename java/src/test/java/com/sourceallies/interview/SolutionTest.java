@@ -4,14 +4,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-class SolutionTest {
-
+public class SolutionTest {
+    
     @Test
-    void shouldPrintHelloWorld() {
-        Solution solution = new Solution();
-        String name = "World";
-
-        assertEquals("Hello World", solution.greeting(name));
+    void shouldSayHelloWorld() {
+        var solution = new Solution();
+        assertEquals("Hello, world!", solution.getGreeting());
     }
 
+    
 }
