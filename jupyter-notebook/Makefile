@@ -1,5 +1,5 @@
 init:
-	echo "No Init Needed"
+	pip install -r requirements.txt
 
 verify:
 	jupyter nbconvert --execute --to notebook --inplace main.ipynb
