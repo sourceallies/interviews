@@ -1,2 +1,4 @@
+ipython==8.22.2
+ipykernel==6.29.3
 jupyter-core==5.7.2
 nbconvert==7.16.3
