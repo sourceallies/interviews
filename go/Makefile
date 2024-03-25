@@ -1,5 +1,5 @@
 init:
-	go install
+	go install -buildvcs=false
 
 verify:
 	go test
