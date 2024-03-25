@@ -1,5 +1,6 @@
 init:
-	pip install -r requirements.txt
+	pip3 --disable-pip-version-check --no-cache-dir install poetry;
+	poetry install;
 
 verify:
 	jupyter nbconvert --execute --to notebook --inplace main.ipynb
