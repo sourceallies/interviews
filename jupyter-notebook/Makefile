@@ -1,6 +1,5 @@
 init:
-	pip3 --disable-pip-version-check --no-cache-dir install poetry;
-	poetry install;
+	echo "No Init Needed"
 
 verify:
 	jupyter nbconvert --execute --to notebook --inplace main.ipynb
