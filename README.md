@@ -1,41 +1,45 @@
-# Source Allies Interviews
+# OpenPhone Technical Interviews
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=704560088&skip_quickstart=true)
 
-This repository contains information about the Source Allies pairing session process.
+This repository contains information about the OpenPhone pairing session process.
 
-Please see our [careers page](https://www.sourceallies.com/careers/) if you are interested in working on our team!
+Please see our [careers page](https://www.openphone.com/careers) if you are interested in working on our team!
 
 _This repo is part of an active effort to make our pairing session process more transparent. We are continuously improving our interview process to make it more effective._
 
 ## Typical Interview Process
 
-Our pairing process typically consists of four steps:
+Our technical interview process typically consists of the following steps:
 
 1. Meeting You
-2. Self Evalutation
-3. A custom [HackerRank](https://www.hackerrank.com/) coding exercise
-4. In-person (or virtual) technical pairing session 
+1. Hiring manager interview
+1. Virtual technical pairing sessions
+1. System design
 
 ## Meeting You
 
-You’ll meet with a recruiter through a call, virtual hangout, or even a coffee. You will connect and talk about your background, where you would like to grow your career, and what drew you to Source Allies. This conversation is to gain an understanding of initial alignment for both parties.
+You’ll meet with a recruiter through a call or virtual hangout. You will connect and talk about your background, where you would like to grow your career, and what drew you to OpenPhone. This conversation is to gain an understanding of initial alignment for both parties.
 
-## Self Evaluation
+## Hiring Manager
 
-This document will be a chance for you to tell stories and share with Source Allies a more in-depth snapshot of your experience and perspectives. There will also be a confidential information component that is shared only between you and your recruiter. 
-
-## Coding Exercise
-
-This is an algorithmic coding exercise via HackerRank to get a better glimpse of your technical capabilities. The test consists of front and backend question options, and a variety of languages, frameworks, and libraries to utilize. Are you up for the challenge?
+You'll meet with the hiring manager for the role through a call or virtual hangout. You'll have a chance to learn more about the OpenPhone Engineering team and the role, as well as better understand the experience we're looking for.
 
 ## Pairing Session
 
-The purpose of this interview is to further gauge your technical ability and to get a sense of what it’s like to work with you. 
+The purpose of this interview is to further gauge your technical ability and to get a sense of what it’s like to work with you.
 
 We use a project to guide our discussion, but we don't have to finish the project. We only need to get far enough along to get a good sense of your technical ability.
 
+We use GitHub CodeSpaces to provide pairing sessions in your web browser or in Visual Studio Code.
+
 To create a positive experience for virtual pairing sessions, please have reliable camera and audio ready.
+
+## System Design
+
+There are multiple ways to design a system, and these interviews are all about checking if the candidate can take the best or most optimized approach to make the system work. We'll either design a new system or review an existing one to gauge your ability to understand the system's trade-offs, complexities, or limitations.
+
+We use Lucidchart for diagramming. We'll ask you to create a free Lucidchart account before the interview.
 
 ## How to use this repo for the pairing session
 
@@ -46,7 +50,6 @@ If you would like a 1 click process to work in one of these languages, it is eas
 Typically, the interviewer will start the code space, then the interviewee will join via liveshare. However, this is not a hard and fast rule. Feel free to leverage codespaces to run this yourself if you would like.
 
 You can also use the dev containers extension for your local VSCode installation to be able to run this, however, it will take a few minutes to pull the needed docker image and get set up, so plan accordingly.
-
 
 ### Using Codespaces
 
@@ -90,7 +93,7 @@ Typically, the interviewer will start the codespace, then the interviewee will j
 
 Every GitHub user has 120 free core hours of codespaces available per month, which will be hard to go over unless you are using codespaces outside of interviewing. You should not have to worry about being charged for usage unless you [explicitly set a spending limit](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/managing-the-spending-limit-for-github-codespaces). If you would like to avoid using codespaces, you are welcome to get this repo running locally using VSCode, docker, and the remote containers extension.
 
-If you decide to use codespaces, we would encourage you to delete your running codespace after the interview by visiting [this link](https://github.com/codespaces/). *Note:* deleting the codespace will remove all files so make sure you've finished your review prior to deleting the codespace.
+Codespaces will automatically delete after 7 days. You can manually delete your running codespace after the interview by visiting [this link](https://github.com/codespaces/). _Note:_ deleting the codespace will remove all files so make sure you've finished your review prior to deleting the codespace.
 
 As always, feel free to reach out if anything in the process is causing problems or concern.
 
