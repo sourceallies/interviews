@@ -1,6 +1,6 @@
 # OpenPhone Technical Interviews
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=704560088&skip_quickstart=true)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=OpenPhone/interviews&skip_quickstart=true)
 
 This repository contains information about the OpenPhone pairing session process.
 
@@ -55,7 +55,7 @@ You can also use the dev containers extension for your local VSCode installation
 
 If using codespaces click this badge.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=704560088&skip_quickstart=true)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=OpenPhone/interviews&skip_quickstart=true)
 
 Here, you have a few options.
 
