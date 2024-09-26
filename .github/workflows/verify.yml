@@ -10,7 +10,7 @@ jobs:
   verify-job:
     runs-on: ubuntu-latest
     container: 
-      image: mcr.microsoft.com/devcontainers/universal:focal
+      image: mcr.microsoft.com/devcontainers/universal:2-focal
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
