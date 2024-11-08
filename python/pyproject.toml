@@ -6,7 +6,6 @@ authors = ["Jake Williamson"]
 
 [tool.poetry.dependencies]
 python = "^3.10.8"
-nbconvert = "^7.16.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "8.3.2"
