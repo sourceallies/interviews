@@ -9,7 +9,7 @@ public class SolutionTest {
     @Test
     void shouldSayHelloWorld() {
         var solution = new Solution();
-        assertEquals("Hello, world!!", solution.getGreeting());
+        assertEquals("Hello, world!", solution.getGreeting());
     }
 
     
