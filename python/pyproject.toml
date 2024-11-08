@@ -6,6 +6,7 @@ authors = ["Jake Williamson"]
 
 [tool.poetry.dependencies]
 python = "^3.10.8"
+jupyter = "^1.1.1"
 jupyter_core = "^5.7.2"
 nbconvert = "^7.16.4"
 
