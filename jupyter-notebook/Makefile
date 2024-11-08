@@ -1,5 +1,5 @@
 init:
-	echo "No Init Needed"
+	pip3 --disable-pip-version-check install jupyter jupyter_core nbconvert
 
 verify:
 	jupyter nbconvert --execute --to notebook --inplace main.ipynb
@@ -7,4 +7,4 @@ verify:
 run:
 	jupyter nbconvert --execute --to notebook --inplace main.ipynb
 
-.PHONY: verify init
+.PHONY: verify init run
