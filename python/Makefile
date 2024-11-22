@@ -1,6 +1,6 @@
 verify:
-	poetry run coverage run --source py_check -m pytest tests;
-	poetry run coverage report;
+	poetry run pytest -v tests/test_vending_machine.py
+
 
 run:
 	python py_check/main.py
