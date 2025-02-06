@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace Check
+namespace Check;
+
+public class Program
 {
-    class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine($"{Generator.GetGreeting()} {Generator.GetName()}");
-        }
+        Console.WriteLine($"{Generator.GetGreeting()} {Generator.GetName()}");
     }
 }

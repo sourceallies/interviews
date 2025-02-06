@@ -1,5 +1,4 @@
 init:
-	dotnet restore;
 	dotnet build
 
 verify:
