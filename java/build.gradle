@@ -35,5 +35,12 @@ tasks.named('test') {
 	useJUnitPlatform()
 	testLogging {
         exceptionFormat "full"
+				
 	}
+}
+
+test {
+    testLogging {
+        events "passed", "failed", "skipped", "standardOut", "standardError"
+    }
 }
