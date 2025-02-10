@@ -1,6 +1,18 @@
 # Source Allies Interviews
 
+## ℹ️ **Getting Ready for Your Pairing Session?** 
+
+If you're preparing for a pairing session with us, you can try out our coding environment right now!
+
+Click the button below to launch a GitHub Codespace and get started in seconds:
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=704560088&skip_quickstart=true)
+
+This will spin up a fully configured development environment in the cloud with all necessary tools pre-installed.
+
+You can use this to familiarize yourself with our setup before your interview.
+
+## About This Repository 
 
 This repository contains information about the Source Allies pairing session process.
 
