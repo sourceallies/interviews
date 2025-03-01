@@ -1,10 +1,11 @@
 {
-	"name": "Java",
+	"name": "Java21",
 	"image": "mcr.microsoft.com/devcontainers/java:dev-21-jdk-bullseye",
 	"containerEnv": {
 		"DISABLE_JAVA_BUILD": "true"
 	},
-	"workspaceFolder": "/workspace/interviews/java",
+	"workspaceFolder": "/workspaces/interviews/java",
+	"postCreateCommand": "gradle build",
 	"customizations": {
 		"vscode": {
 			"settings": {
