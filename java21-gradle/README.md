@@ -9,7 +9,7 @@ gradle build
 ## Tech Stack
 - Java 21
 - JUnit 5
-- Spring Boot 3.2 
+- Spring Boot 3.2
     - Web
     - JPA
     - Lombok
