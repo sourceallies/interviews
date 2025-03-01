@@ -3,7 +3,7 @@
 ## Getting Started
 
 ```bash [Run]
-gradle build
+./gradlew build
 ```
 
 ## Tech Stack
@@ -19,6 +19,6 @@ gradle build
 
 | Command          | Description       |
 | ---------------- | ----------------- |
-| `gradle build`   | build the project |
-| `gradle test`    |  run tests        |
-| `gradle bootRun` | start the server  |
+| `./gradlew build`   | build the project |
+| `./gradlew test`    |  run tests        |
+| `./gradlew bootRun` | start the server  |
