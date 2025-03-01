@@ -4,8 +4,7 @@
 	"containerEnv": {
 		"DISABLE_JAVA_BUILD": "true"
 	},
-	"workspaceFolder": "/workspaces/interviews/java",
-	"postCreateCommand": "gradle build",
+	"workspaceFolder": "/workspaces/interviews/java21-gradle",
 	"customizations": {
 		"vscode": {
 			"settings": {
