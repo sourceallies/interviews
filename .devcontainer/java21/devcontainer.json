@@ -1,5 +1,5 @@
 {
-	"name": "Java 21",
+	"name": "Java 21 - Gradle",
 	"image": "mcr.microsoft.com/devcontainers/java:dev-21-jdk-bullseye",
 	"containerEnv": {
 		"DISABLE_JAVA_BUILD": "true"
