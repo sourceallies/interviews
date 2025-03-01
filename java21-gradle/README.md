@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-```bash [Run]
+```bash
 ./gradlew build
 ```
 
