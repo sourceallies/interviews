@@ -5,6 +5,9 @@
 		"DISABLE_JAVA_BUILD": "true"
 	},
 	"workspaceFolder": "/workspaces/interviews/java21-gradle",
+	"hostRequirements": {
+		"cpus": 4
+	},
 	"customizations": {
 		"vscode": {
 			"settings": {
