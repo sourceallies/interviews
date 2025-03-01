@@ -4,7 +4,7 @@
 	"containerEnv": {
 		"DISABLE_JAVA_BUILD": "true"
 	},
-	"workspaceFolder": "/workspace/interview/java",
+	"workspaceFolder": "/workspace/interviews/java",
 	"customizations": {
 		"vscode": {
 			"settings": {
