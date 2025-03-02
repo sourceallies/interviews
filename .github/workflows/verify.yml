@@ -34,10 +34,15 @@ jobs:
       - name: Set up devcontainer CLI
         run: npm install --global @devcontainers/cli
 
-      - name: Test DevContainer
-        run: echo "Container ${{ matrix.devcontainer }}"
-
-      - name: Test container
+      - name: Start devcontainer
         run: |
-          container_info="$(devcontainer up --config ${{ matrix.devcontainer }} --workspace-folder .)"
-          jq --raw-input --slurp '.' <<< "$container_info"
+          devcontainer up --workspace-folder . --config ${{ matrix.devcontainer }}
+
+      - name: Run make init
+        run: |
+          devcontainer exec --workspace-folder . --config ${{ matrix.devcontainer }} make init
+
+      - name: Run make verify
+        run: |
+          devcontainer exec --workspace-folder . --config ${{ matrix.devcontainer }} make verify
+

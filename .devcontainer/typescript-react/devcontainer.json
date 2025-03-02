@@ -1,7 +1,8 @@
 {
 	"name": "Typescript React",
 	"image": "mcr.microsoft.com/devcontainers/universal:2-focal",
-	"postCreateCommand": "cd typescript-react && make init",
+	"postCreateCommand": "make init",
+	"workspaceFolder": "/workspaces/interviews/typescript-react",
 	"customizations": {
 		"vscode": {
 			"settings": {
