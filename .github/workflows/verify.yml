@@ -40,6 +40,8 @@ jobs:
 
       - name: Run make init
         run: |
+          [ "${{ matrix.devcontainer }}" == ".devcontainer/c-sharp/devcontainer.json" ] && devcontainer exec --workspace-folder . --config .devcontainer/c-sharp/devcontainer.json ls -al /home/codespace/.dotnet
+          [ "${{ matrix.devcontainer }}" == ".devcontainer/c-sharp/devcontainer.json" ] && devcontainer exec --workspace-folder . --config .devcontainer/c-sharp/devcontainer.json whoami
           devcontainer exec --workspace-folder . --config ${{ matrix.devcontainer }} make init
 
       - name: Run make verify
