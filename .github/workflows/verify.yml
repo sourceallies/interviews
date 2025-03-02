@@ -34,7 +34,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up devcontainer CLI
-        run: npm install --global devcontainer
+        run: npm install --global @devcontainers/cli
 
       - name: Test DevContainer
         run: echo "Container ${{ matrix.devcontainer }}"
