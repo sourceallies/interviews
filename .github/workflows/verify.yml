@@ -26,7 +26,7 @@ jobs:
     needs: discovery-job
     strategy:
       matrix:
-       devcontainer: ${{ toJson(needs.discovery-job.outputs.devcontainers) }}
+       devcontainer: ${{ fromJson(needs.discovery-job.outputs.devcontainers) }}
     # container: 
     #   image: mcr.microsoft.com/devcontainers/universal:focal
     steps:
