@@ -19,10 +19,6 @@ jobs:
 
   verify-job:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        
-      
     container: 
       image: mcr.microsoft.com/devcontainers/universal:focal
     steps:
