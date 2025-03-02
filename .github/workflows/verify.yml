@@ -40,7 +40,7 @@ jobs:
         run: echo "Container ${{ matrix.devcontainer }}"
 
       - name: Build container
-        run: devcontainer build --config ${{ matrix.devcontainer }}
+        run: devcontainer build --config ${{ matrix.devcontainer }} --workspace-folder .
 
       # - name: Init and Verify Languages
       #   run: bash resources/topLevelVerify.sh
