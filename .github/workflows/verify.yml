@@ -40,13 +40,6 @@ jobs:
 
       - name: Run make init
         run: |
-          if [ "${{ matrix.devcontainer }}" == ".devcontainer/c-sharp/devcontainer.json" ]
-          then
-            echo "=============================="
-            echo "Debugging c-sharp devcontainer"
-            devcontainer exec --workspace-folder . --config .devcontainer/c-sharp/devcontainer.json whoami
-            echo "=============================="
-          fi
           devcontainer exec --workspace-folder . --config ${{ matrix.devcontainer }} make init
 
       - name: Run make verify
