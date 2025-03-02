@@ -15,7 +15,7 @@ jobs:
 
       - name: Discover devcontainers
         run: |
-          ls .devcontainer/**/devcontainer.json
+          ls .devcontainer/**/devcontainer.json | jq --raw-input --slurp --compact-output 'split("\n")[:-1]'
 
   verify-job:
     runs-on: ubuntu-latest
