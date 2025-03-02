@@ -39,6 +39,9 @@ jobs:
       - name: Test DevContainer
         run: echo "Container ${{ matrix.devcontainer }}"
 
+      - name: Build container
+        run: devcontainer build --config ${{ matrix.devcontainer }}
+
       # - name: Init and Verify Languages
       #   run: bash resources/topLevelVerify.sh
 
