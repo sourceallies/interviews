@@ -36,7 +36,7 @@ jobs:
 
       - name: Start devcontainer
         run: |
-          devcontainer up --workspace-folder . --config ${{ matrix.devcontainer }}
+          devcontainer up --workspace-folder . --config ${{ matrix.devcontainer }} --skip-post-create
 
       - name: Run make init
         run: |
