@@ -1,6 +1,6 @@
 {
 	"name": "C-Sharp",
-	"image": "mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:dev-8.0-noble",
 	"postCreateCommand": "make init",
 	"workspaceFolder": "/workspaces/interviews/c-sharp",
 	"customizations": {
