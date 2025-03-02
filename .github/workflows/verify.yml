@@ -19,7 +19,7 @@ jobs:
         id: discover-containers
         run: |
           devcontainers="$(ls .devcontainer/**/devcontainer.json | jq --raw-input --slurp --compact-output 'split("\n")[:-1]')"
-          echo "::set-output devcontainers=$devcontainers" >> "$GITHUB_ENV"
+          echo "devcontainers=$devcontainers" >> "$GITHUB_ENV"
 
   verify-job:
     runs-on: ubuntu-latest
