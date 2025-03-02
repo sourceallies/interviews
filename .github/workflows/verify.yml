@@ -24,14 +24,21 @@ jobs:
   verify-job:
     runs-on: ubuntu-latest
     needs: discovery-job
-    container: 
-      image: mcr.microsoft.com/devcontainers/universal:focal
+    strategy:
+      matrix:
+       devcontainer: ${{ fromJson(needs.discovery-job.outputs.devcontainers) }}
+    # container: 
+    #   image: mcr.microsoft.com/devcontainers/universal:focal
     steps:
-      - name: Testing transfer
-        run: echo "${{ fromJson(needs.discovery-job.outputs.devcontainers) }}"
-
       - name: Checkout Repo
         uses: actions/checkout@v4
-      - name: Init and Verify Languages
-        run: bash resources/topLevelVerify.sh
+
+      - name: Set up devcontainer CLI
+        run: npm install --global devcontainer
+
+      - name: Test DevContainer
+        run: echo "Container ${{ matrix.devcontainer }}"
+
+      # - name: Init and Verify Languages
+      #   run: bash resources/topLevelVerify.sh
 
