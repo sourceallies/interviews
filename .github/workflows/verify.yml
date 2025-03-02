@@ -7,8 +7,22 @@ on:
     - main
 
 jobs:
+  discovery-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Discover devcontainers
+        run: |
+          ls **/?devcontainer.json
+
   verify-job:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        
+      
     container: 
       image: mcr.microsoft.com/devcontainers/universal:focal
     steps:
