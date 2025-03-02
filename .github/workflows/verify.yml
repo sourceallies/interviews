@@ -15,7 +15,7 @@ jobs:
 
       - name: Discover devcontainers
         run: |
-          ls **/?devcontainer.json
+          ls .devcontainer/**/devcontainer.json
 
   verify-job:
     runs-on: ubuntu-latest
