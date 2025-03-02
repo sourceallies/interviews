@@ -27,8 +27,6 @@ jobs:
     strategy:
       matrix:
        devcontainer: ${{ fromJson(needs.discovery-job.outputs.devcontainers) }}
-    # container: 
-    #   image: mcr.microsoft.com/devcontainers/universal:focal
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -39,9 +37,7 @@ jobs:
       - name: Test DevContainer
         run: echo "Container ${{ matrix.devcontainer }}"
 
-      - name: Build container
-        run: devcontainer build --config ${{ matrix.devcontainer }} --workspace-folder .
-
-      # - name: Init and Verify Languages
-      #   run: bash resources/topLevelVerify.sh
-
+      - name: Test container
+        run: |
+          container_info="$(devcontainer up --config ${{ matrix.devcontainer }} --workspace-folder .)"
+          jq --raw-input --slurp '.' <<< "$container_info"

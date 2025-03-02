@@ -1,0 +1,29 @@
+{
+	"name": "Java",
+	"image": "mcr.microsoft.com/devcontainers/universal:2-focal",
+	"containerEnv": {
+      "DISABLE_JAVA_BUILD": "true"
+	},
+	"postCreateCommand": "cd java && make init",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"java.server.launchMode": "Standard",
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme",
+				"redhat.telemetry.enabled": false
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-gradle",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
+}
