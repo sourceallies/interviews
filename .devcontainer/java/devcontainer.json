@@ -6,6 +6,9 @@
 	},
 	"postCreateCommand": "make init",
 	"workspaceFolder": "/workspaces/interviews/java",
+	"hostRequirements": {
+		"cpus": 4
+	},
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -16,7 +19,8 @@
 				"liveshare.publishWorkspaceInfo": true,
 				"extensions.ignoreRecommendations": true,
 				"workbench.startupEditor": "readme",
-				"redhat.telemetry.enabled": false
+				"redhat.telemetry.enabled": false,
+				"java.compile.nullAnalysis.mode": "automatic"
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
