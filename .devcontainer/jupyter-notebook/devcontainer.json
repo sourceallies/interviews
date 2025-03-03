@@ -1,7 +1,8 @@
 {
 	"name": "Jupyter Notebook",
 	"image": "mcr.microsoft.com/devcontainers/universal:2-focal",
-	"postCreateCommand": "cd jupyter-notebook && make init",
+	"postCreateCommand": "make init",
+	"workspaceFolder": "/workspaces/interviews/jupyter-notebook",
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -11,7 +12,7 @@
 				"liveshare.publishWorkspaceInfo": true,
 				"python": {
 					"editor.defaultFormatter": "ms-python.black-formatter"
-				  },
+				},
 				"python.languageServer": "Pylance",
 				"extensions.ignoreRecommendations": true,
 				"workbench.startupEditor": "readme"

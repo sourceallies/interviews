@@ -1,7 +1,8 @@
 {
 	"name": "Javascript",
 	"image": "mcr.microsoft.com/devcontainers/universal:2-focal",
-	"postCreateCommand": "cd javascript && make init",
+	"postCreateCommand": "make init",
+	"workspaceFolder": "/workspaces/interviews/javascript",
 	"customizations": {
 		"vscode": {
 			"settings": {
