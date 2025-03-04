@@ -1,10 +1,10 @@
 init:
-	gradle build
+	./gradlew build
 
 verify:
-	gradle test
+	./gradlew test
 
 run:
-	gradle bootRun
+	./gradlew bootRun
 
 .PHONY: init verify run
