@@ -1,0 +1,22 @@
+{
+	"name": "Rust",
+	"image": "mcr.microsoft.com/devcontainers/universal:2-focal",
+	"postCreateCommand": "make init",
+	"workspaceFolder": "/workspaces/interviews/rust",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme"
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"rust-lang.rust-analyzer"
+			]
+		}
+	}
+}
