@@ -11,7 +11,7 @@ jupyter = "^1.0.0"
 jupyter_core = "^5.8.1"
 nbconvert = "^7.16.4"
 pandas = "^2.1.1"  
-numpy = "^2.2.1"  
+numpy = "^2.2.6"  
 matplotlib = "^3.10.0"
 
 
