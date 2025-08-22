@@ -1,6 +1,6 @@
 {
 	"name": "Go",
-	"image": "mcr.microsoft.com/devcontainers/universal:2-focal",
+	"image": "mcr.microsoft.com/devcontainers/universal:3-noble",
 	"postCreateCommand": "make init",
 	"workspaceFolder": "/workspaces/interviews/go",
 	"customizations": {
