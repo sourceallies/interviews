@@ -1,0 +1,4 @@
+﻿<Solution>
+  <Project Path="Application\Application.csproj" Type="Classic C#" />
+  <Project Path="UnitTests\UnitTests.csproj" Type="Classic C#" />
+</Solution>
