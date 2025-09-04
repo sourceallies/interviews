@@ -1,7 +1,7 @@
 {
 	"name": "C-Sharp",
 	"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-noble",
-	"postCreateCommand": "make init",
+	"postCreateCommand": "dotnet build",
 	"workspaceFolder": "/workspaces/interviews/c-sharp",
 	"customizations": {
 		"vscode": {
