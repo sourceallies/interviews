@@ -1,0 +1,28 @@
+{
+	"name": "AWS + Terraform",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"postCreateCommand": "make init",
+	"workspaceFolder": "/workspaces/interviews/aws-terraform",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers/features/terraform:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme"
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"hashicorp.terraform"
+			]
+		}
+	}
+}
