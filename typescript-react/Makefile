@@ -2,7 +2,7 @@ init:
 	npm ci
 
 verify:
-	npm run test
+	npm test
 
 run:
 	npm run dev

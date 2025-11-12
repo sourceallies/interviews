@@ -22,10 +22,10 @@ _This repo is part of an active effort to make our pairing session process more 
 
 ## Typical Interview Process
 
-Our pairing process typically consists of four steps:
+Our interview process typically consists of four steps:
 
 1. Meeting You
-2. Self Evalutation
+2. Self Evaluation
 3. A custom [HackerRank](https://www.hackerrank.com/) coding exercise
 4. In-person (or virtual) technical pairing session 
 
@@ -43,9 +43,9 @@ This is an algorithmic coding exercise via HackerRank to get a better glimpse of
 
 ## Pairing Session
 
-The purpose of this interview is to further gauge your technical ability and to get a sense of what it’s like to work with you. 
+The purpose of this interview is to further gauge your technical ability and to get a sense of what it's like to work with you.
 
-We use a project to guide our discussion, but we don't have to finish the project. We only need to get far enough along to get a good sense of your technical ability.
+During the session, we'll work together on a TDD (Test-Driven Development) kata - a small coding exercise where we write tests first, then implement code to make them pass. Each project includes a basic starter with passing tests, and we'll collaborate to extend the functionality. We don't need to finish the exercise; we just need to get far enough along to get a good sense of your technical ability and problem-solving approach.
 
 To create a positive experience for virtual pairing sessions, please have reliable camera and audio ready.
 
@@ -74,7 +74,7 @@ __Option 2__: Use the `Default` devcontainer.  If you use this option, you will 
 
 ![Launch Codespace](resources/media/LaunchCodespace.png)
 
-After you choose either option you should be greeted with a very short building process, followed by VSCode launching in a new broswer tab.
+After you choose either option you should be greeted with a very short building process, followed by VSCode launching in a new browser tab.
 
 ![Codespace Launching](resources/media/CodespaceLaunching.png)
 

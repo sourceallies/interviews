@@ -2,3 +2,5 @@
 localstack/data
 .mypy_cache
 target
+.idea
+postgres-data
