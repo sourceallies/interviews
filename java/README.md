@@ -1,11 +1,5 @@
 # Java Project
 
-## Getting Started
-
-```bash
-./gradlew build
-```
-
 ## Tech Stack
 - Java 21
 - JUnit 5
@@ -15,10 +9,10 @@
     - Lombok
 - Gradle
 
-## Useful Commands
-
-| Command          | Description       |
-| ---------------- | ----------------- |
-| `./gradlew build`   | build the project |
-| `./gradlew test`    |  run tests        |
-| `./gradlew bootRun` | start the server  |
+## Common Commands
+- `make init`
+    - build the project
+- `make verify`
+    - run tests
+- `make run`
+    - start the server
