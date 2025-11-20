@@ -4,3 +4,4 @@ localstack/data
 target
 .idea
 postgres-data
+.DS_Store
