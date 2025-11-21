@@ -2,8 +2,8 @@ spring:
   autoconfigure:
     exclude:
       # Remove these exclusions if you'd like to use JPA for database functionality
-      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration
+      - org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
   datasource:
   # Configured to point to the docker-compose postgres DB container by default
     username: postgres

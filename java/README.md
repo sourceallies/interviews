@@ -1,9 +1,9 @@
 # Java Project
 
 ## Tech Stack
-- Java 21
-- JUnit 5
-- Spring Boot 3.2
+- Java 25
+- JUnit 6
+- Spring Boot 4.0
     - Web
     - JPA
     - Lombok
