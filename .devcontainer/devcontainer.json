@@ -10,10 +10,14 @@
 				"liveshare.publishWorkspaceInfo": true,
 				"extensions.ignoreRecommendations": true,
 				"workbench.startupEditor": "readme",
-				"redhat.telemetry.enabled": false
+				"redhat.telemetry.enabled": false,
+				"git.openRepositoryInParentFolders": "never",
+				"git.autofetch": true,
+				"chat.disableAIFeatures": true
 			},
 			"extensions": [
-				"ms-vsliveshare.vsliveshare"
+				"ms-vsliveshare.vsliveshare",
+				"-github.copilot-chat"
 			]
 		}
 	}

@@ -20,14 +20,18 @@
 				"extensions.ignoreRecommendations": true,
 				"workbench.startupEditor": "readme",
 				"redhat.telemetry.enabled": false,
-				"java.compile.nullAnalysis.mode": "automatic"
+				"java.compile.nullAnalysis.mode": "automatic",
+				"git.openRepositoryInParentFolders": "never",
+				"git.autofetch": true,
+				"chat.disableAIFeatures": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"vscjava.vscode-java-pack",
 				"vscjava.vscode-java-test",
 				"vscjava.vscode-gradle",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"-github.copilot-chat"
 			]
 		}
 	}

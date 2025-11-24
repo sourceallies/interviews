@@ -11,12 +11,16 @@
 				"liveshare.languages.allowGuestCommandControl": true,
 				"liveshare.publishWorkspaceInfo": true,
 				"extensions.ignoreRecommendations": true,
-				"workbench.startupEditor": "readme"
+				"workbench.startupEditor": "readme",
+				"git.openRepositoryInParentFolders": "never",
+				"git.autofetch": true,
+				"chat.disableAIFeatures": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"dbaeumer.vscode-eslint",
-				"firsttris.vscode-jest-runner"
+				"firsttris.vscode-jest-runner",
+				"-github.copilot-chat"
 			]
 		}
 	}
