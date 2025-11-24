@@ -1,6 +1,6 @@
 {
 	"name": "Default",
-	"image": "mcr.microsoft.com/devcontainers/universal:3-noble",
+	"image": "mcr.microsoft.com/devcontainers/universal:4-noble",
 	"customizations": {
 		"vscode": {
 			"settings": {

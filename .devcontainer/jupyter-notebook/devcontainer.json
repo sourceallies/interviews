@@ -1,6 +1,6 @@
 {
 	"name": "Jupyter Notebook",
-	"image": "mcr.microsoft.com/devcontainers/universal:3-noble",
+	"image": "mcr.microsoft.com/devcontainers/universal:4-noble",
 	"postCreateCommand": "make init",
 	"workspaceFolder": "/workspaces/interviews/jupyter-notebook",
 	"customizations": {

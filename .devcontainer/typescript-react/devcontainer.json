@@ -1,6 +1,6 @@
 {
 	"name": "Typescript React",
-	"image": "mcr.microsoft.com/devcontainers/universal:3-noble",
+	"image": "mcr.microsoft.com/devcontainers/universal:4-noble",
 	"postCreateCommand": "make init",
 	"workspaceFolder": "/workspaces/interviews/typescript-react",
 	"customizations": {
