@@ -15,7 +15,10 @@
 				},
 				"python.languageServer": "Pylance",
 				"extensions.ignoreRecommendations": true,
-				"workbench.startupEditor": "readme"
+				"workbench.startupEditor": "readme",
+				"git.openRepositoryInParentFolders": "never",
+				"git.autofetch": true,
+				"chat.disableAIFeatures": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
@@ -24,7 +27,8 @@
 				"ms-python.black-formatter",
 				"ms-python.pylint",
 				"ms-python.mypy-type-checker",
-				"matangover.mypy"
+				"matangover.mypy",
+				"-github.copilot-chat"
 			]
 		}
 	}

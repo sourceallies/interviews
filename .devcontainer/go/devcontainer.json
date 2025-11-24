@@ -11,11 +11,15 @@
 				"liveshare.languages.allowGuestCommandControl": true,
 				"liveshare.publishWorkspaceInfo": true,
 				"extensions.ignoreRecommendations": true,
-				"workbench.startupEditor": "readme"
+				"workbench.startupEditor": "readme",
+				"git.openRepositoryInParentFolders": "never",
+				"git.autofetch": true,
+				"chat.disableAIFeatures": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
-				"golang.go"
+				"golang.go",
+				"-github.copilot-chat"
 			]
 		}
 	}
