@@ -1,7 +1,7 @@
-import { hello } from "./index";
+import { greet } from "./index";
 
-describe("Hello", () => {
-  it("should print `Hello World`", () => {
-    expect('Hello World').toBe(hello("World"));
+describe("greet", () => {
+  it("should greet by name", () => {
+    expect(greet("World")).toBe("Hello, World!");
   });
 });

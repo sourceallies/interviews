@@ -2,7 +2,7 @@ package com.sourceallies.interview;
 
 public class Solution {
 
-    public String getGreeting() {
-        return "Hello, world!";
+    public String greet(String name) {
+        return "Hello, " + name + "!";
     }
 }

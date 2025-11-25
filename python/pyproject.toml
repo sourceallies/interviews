@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "py_check"
+name = "app"
 version = "0.1.0"
 description = ""
 authors = ["Jake Williamson"]

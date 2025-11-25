@@ -1,4 +1,8 @@
-it('should say hello world', () => {
-  const greeting = require('./index').sayHello('world');
-  expect(greeting).toBe('Hi world!');
+const { greet } = require('./index');
+
+describe('greet', () => {
+  it('should greet by name', () => {
+    const greeting = greet('World');
+    expect(greeting).toBe('Hello, World!');
+  });
 });
