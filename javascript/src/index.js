@@ -1,10 +1,7 @@
-
-console.log(sayHello('world'));
-
-function sayHello(name) {
-    return `Hi ${name}!`
+function greet(name) {
+    return `Hello, ${name}!`;
 }
 
 module.exports = {
-    sayHello
-}
+    greet
+};

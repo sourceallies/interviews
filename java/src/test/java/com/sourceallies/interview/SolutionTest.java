@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 public class SolutionTest {
     
     @Test
-    void shouldSayHelloWorld() {
+    void shouldGreetByName() {
         var solution = new Solution();
-        assertEquals("Hello, world!", solution.getGreeting());
+        assertEquals("Hello, World!", solution.greet("World"));
     }
 
     

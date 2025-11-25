@@ -4,4 +4,7 @@ init:
 verify:
 	dotnet test
 
-.PHONY: init verify
+run:
+	dotnet run --project Application
+
+.PHONY: init verify run

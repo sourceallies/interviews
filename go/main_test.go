@@ -2,11 +2,10 @@ package main
 
 import (
 	"testing"
-
 	"github.com/stretchr/testify/assert"
 )
 
-func TestSayHello(t *testing.T) {
-	result := SayHello("world!")
-	assert.Equal(t, "Hello world!", result)
+func TestGreet(t *testing.T) {
+	result := Greet("World")
+	assert.Equal(t, "Hello, World!", result)
 }
