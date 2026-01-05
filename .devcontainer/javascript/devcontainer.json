@@ -1,6 +1,6 @@
 {
 	"name": "Javascript",
-	"image": "mcr.microsoft.com/devcontainers/universal:4-noble",
+	"image": "mcr.microsoft.com/devcontainers/universal:5-noble",
 	"postCreateCommand": "make init",
 	"workspaceFolder": "/workspaces/interviews/javascript",
 	"customizations": {
