@@ -1,0 +1,28 @@
+{
+	"name": "F-Sharp",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
+	"postCreateCommand": "make init",
+	"workspaceFolder": "/workspaces/interviews/f-sharp",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme",
+				"git.openRepositoryInParentFolders": "never",
+				"git.autofetch": true,
+				"chat.disableAIFeatures": true
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"ms-dotnettools.csharp",
+				"ms-dotnettools.csdevkit",
+				"ionide.ionide-fsharp",
+				"-github.copilot-chat"
+			]
+		}
+	}
+}
