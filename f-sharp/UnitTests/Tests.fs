@@ -1,6 +1,5 @@
 ﻿module Tests
 
-open System
 open Xunit
 
 [<Fact>]
