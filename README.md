@@ -102,6 +102,19 @@ Typically, the interviewer will start the codespace, then the interviewee will j
 
 Every GitHub user has 120 free core hours of codespaces available per month, which will be hard to go over unless you are using codespaces outside of interviewing. You should not have to worry about being charged for usage unless you [explicitly set a spending limit](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/managing-the-spending-limit-for-github-codespaces). If you would like to avoid using codespaces, you are welcome to get this repo running locally using VSCode, docker, and the remote containers extension.
 
+## Copilot Setup
+
+For Copilot to work, candidates need a Copilot seat assigned in **Organization Settings > Copilot > Access**.
+
+## Session Capture
+
+Copilot Chat interactions are automatically saved via SpecStory. Inline completions (Tab to accept) are not captured.
+
+To extract conversations after the interview:
+```bash
+gh codespace cp -r 'remote:/workspaces/interviews/.specstory/' ./interviews/candidate-name/
+```
+
 If you decide to use codespaces, we would encourage you to delete your running codespace after the interview by visiting [this link](https://github.com/codespaces/). *Note:* deleting the codespace will remove all files so make sure you've finished your review prior to deleting the codespace.
 
 As always, feel free to reach out if anything in the process is causing problems or concern.
@@ -109,3 +122,17 @@ As always, feel free to reach out if anything in the process is causing problems
 # Troubleshooting
 
 If something doesn't seem quite right with the codespace once it's up and running you can type `devcontainer-info` in a console to see some information about the current configuration. `devcontainer-info` should tell you the version of the image you're running, source code location, build timestamps, and a link to a [Markdown file](https://github.com/devcontainers/images/blob/main/src/universal/history/2.5.8.md) showing what versions of different tools are installed on the current image.
+
+## Copilot Not Working
+
+1. Verify the candidate has a Copilot seat:
+   ```bash
+   gh api /orgs/sourceallies/copilot/billing/seats --jq '.seats[] | select(.assignee.login == "username")'
+   ```
+2. Check organization Copilot policies are enabled
+3. Have candidate sign out/in to GitHub in the Codespace
+
+## SpecStory Not Capturing
+
+1. Check Extensions panel for "SpecStory"
+2. Verify `.specstory/history/` exists: `ls -la .specstory/history/`

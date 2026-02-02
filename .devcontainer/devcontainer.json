@@ -1,6 +1,7 @@
 {
 	"name": "Default",
 	"image": "mcr.microsoft.com/devcontainers/universal:5-noble",
+	"postCreateCommand": "mkdir -p .specstory/history",
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -13,11 +14,13 @@
 				"redhat.telemetry.enabled": false,
 				"git.openRepositoryInParentFolders": "never",
 				"git.autofetch": true,
-				"chat.disableAIFeatures": true
+				"specstory.autoSave": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
-				"-github.copilot-chat"
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"specstory.specstory"
 			]
 		}
 	}
