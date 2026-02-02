@@ -4,7 +4,7 @@
 	"containerEnv": {
 		"DISABLE_JAVA_BUILD": "true"
 	},
-	"postCreateCommand": "make init",
+	"postCreateCommand": "mkdir -p .specstory/history && make init",
 	"workspaceFolder": "/workspaces/interviews/java",
 	"hostRequirements": {
 		"cpus": 4
@@ -23,7 +23,7 @@
 				"java.compile.nullAnalysis.mode": "automatic",
 				"git.openRepositoryInParentFolders": "never",
 				"git.autofetch": true,
-				"chat.disableAIFeatures": true
+				"specstory.autoSave": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
@@ -31,7 +31,9 @@
 				"vscjava.vscode-java-test",
 				"vscjava.vscode-gradle",
 				"ms-azuretools.vscode-docker",
-				"-github.copilot-chat"
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"specstory.specstory"
 			]
 		}
 	}

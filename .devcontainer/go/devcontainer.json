@@ -1,7 +1,7 @@
 {
 	"name": "Go",
 	"image": "mcr.microsoft.com/devcontainers/universal:5-noble",
-	"postCreateCommand": "make init",
+	"postCreateCommand": "mkdir -p .specstory/history && make init",
 	"workspaceFolder": "/workspaces/interviews/go",
 	"customizations": {
 		"vscode": {
@@ -14,12 +14,14 @@
 				"workbench.startupEditor": "readme",
 				"git.openRepositoryInParentFolders": "never",
 				"git.autofetch": true,
-				"chat.disableAIFeatures": true
+				"specstory.autoSave": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"golang.go",
-				"-github.copilot-chat"
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"specstory.specstory"
 			]
 		}
 	}

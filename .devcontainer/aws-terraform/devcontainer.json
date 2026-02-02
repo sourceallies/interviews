@@ -1,7 +1,7 @@
 {
 	"name": "AWS + Terraform",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	"postCreateCommand": "make init",
+	"postCreateCommand": "mkdir -p .specstory/history && make init",
 	"workspaceFolder": "/workspaces/interviews/aws-terraform",
 	"features": {
 		"ghcr.io/devcontainers/features/aws-cli:1": {},
@@ -20,12 +20,14 @@
 				"workbench.startupEditor": "readme",
 				"git.openRepositoryInParentFolders": "never",
 				"git.autofetch": true,
-				"chat.disableAIFeatures": true
+				"specstory.autoSave": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"hashicorp.terraform",
-				"-github.copilot-chat"
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"specstory.specstory"
 			]
 		}
 	}

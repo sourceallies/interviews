@@ -1,7 +1,7 @@
 {
 	"name": "F-Sharp",
 	"image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
-	"postCreateCommand": "make init",
+	"postCreateCommand": "mkdir -p .specstory/history && make init",
 	"workspaceFolder": "/workspaces/interviews/f-sharp",
 	"customizations": {
 		"vscode": {
@@ -14,14 +14,16 @@
 				"workbench.startupEditor": "readme",
 				"git.openRepositoryInParentFolders": "never",
 				"git.autofetch": true,
-				"chat.disableAIFeatures": true
+				"specstory.autoSave": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"ms-dotnettools.csharp",
 				"ms-dotnettools.csdevkit",
 				"ionide.ionide-fsharp",
-				"-github.copilot-chat"
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"specstory.specstory"
 			]
 		}
 	}

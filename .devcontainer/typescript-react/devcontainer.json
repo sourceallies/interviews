@@ -1,7 +1,7 @@
 {
 	"name": "Typescript React",
 	"image": "mcr.microsoft.com/devcontainers/universal:5-noble",
-	"postCreateCommand": "make init",
+	"postCreateCommand": "mkdir -p .specstory/history && make init",
 	"workspaceFolder": "/workspaces/interviews/typescript-react",
 	"customizations": {
 		"vscode": {
@@ -14,13 +14,15 @@
 				"workbench.startupEditor": "readme",
 				"git.openRepositoryInParentFolders": "never",
 				"git.autofetch": true,
-				"chat.disableAIFeatures": true
+				"specstory.autoSave": true
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
 				"dbaeumer.vscode-eslint",
 				"firsttris.vscode-jest-runner",
-				"-github.copilot-chat"
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"specstory.specstory"
 			]
 		}
 	}
