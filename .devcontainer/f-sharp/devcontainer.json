@@ -14,7 +14,8 @@
 				"workbench.startupEditor": "readme",
 				"git.openRepositoryInParentFolders": "never",
 				"git.autofetch": true,
-				"specstory.autoSave": true
+				"specstory.autoSave": true,
+				"editor.inlineSuggest.enabled": false
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",

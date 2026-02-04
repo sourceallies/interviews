@@ -5,3 +5,4 @@ target
 .idea
 postgres-data
 .DS_Store
+.specstory
