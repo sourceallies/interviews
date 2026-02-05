@@ -8,6 +8,7 @@
 			"settings": {
 				"liveshare.allowGuestDebugControl": true,
 				"liveshare.allowGuestTaskControl": true,
+				"liveshare.connectionMode": "relay",
 				"liveshare.languages.allowGuestCommandControl": true,
 				"liveshare.publishWorkspaceInfo": true,
 				"python": {
