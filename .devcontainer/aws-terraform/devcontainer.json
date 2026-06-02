@@ -1,6 +1,6 @@
 {
 	"name": "AWS + Terraform",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu24.04",
 	"postCreateCommand": "mkdir -p .specstory/history && make init",
 	"workspaceFolder": "/workspaces/interviews/aws-terraform",
 	"features": {
