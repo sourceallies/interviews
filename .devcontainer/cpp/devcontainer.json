@@ -1,0 +1,34 @@
+{
+	"name": "C++",
+	"image": "mcr.microsoft.com/devcontainers/cpp:latest",
+	"postCreateCommand": "make init",
+	"workspaceFolder": "/workspaces/interviews/cpp",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.connectionMode": "relay",
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme",
+				"git.openRepositoryInParentFolders": "never",
+				"git.autofetch": true,
+				"specstory.autoSave": true,
+				"editor.inlineSuggest.enabled": false
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"specstory.specstory"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {}
+	}
+}
