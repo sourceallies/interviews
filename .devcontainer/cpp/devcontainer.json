@@ -1,19 +1,14 @@
 {
-	"name": "AWS + Terraform",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu24.04",
-	"postCreateCommand": "mkdir -p .specstory/history && make init",
-	"workspaceFolder": "/workspaces/interviews/aws-terraform",
-	"features": {
-		"ghcr.io/devcontainers/features/aws-cli:1": {},
-		"ghcr.io/devcontainers/features/docker-in-docker:3": {},
-		"ghcr.io/devcontainers/features/python:1": {},
-		"ghcr.io/devcontainers/features/terraform:1": {}
-	},
+	"name": "C++",
+	"image": "mcr.microsoft.com/devcontainers/cpp:latest",
+	"postCreateCommand": "make init",
+	"workspaceFolder": "/workspaces/interviews/cpp",
 	"customizations": {
 		"vscode": {
 			"settings": {
 				"liveshare.allowGuestDebugControl": true,
 				"liveshare.allowGuestTaskControl": true,
+				"liveshare.connectionMode": "relay",
 				"liveshare.languages.allowGuestCommandControl": true,
 				"liveshare.publishWorkspaceInfo": true,
 				"extensions.ignoreRecommendations": true,
@@ -25,11 +20,15 @@
 			},
 			"extensions": [
 				"ms-vsliveshare.vsliveshare",
-				"hashicorp.terraform",
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
 				"specstory.specstory"
 			]
 		}
+	},
+	"features": {
+		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {}
 	}
 }
