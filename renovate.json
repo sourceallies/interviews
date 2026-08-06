@@ -1,0 +1,36 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    ":semanticCommitsDisabled",
+    "schedule:monthly",
+    "group:allNonMajor"
+  ],
+  "timezone": "America/Chicago",
+  "labels": ["dependencies"],
+  "minimumReleaseAge": "14 days",
+  "platformAutomerge": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "description": "These exercises are small starter shells, so anything that survives the full devcontainer matrix is good enough to merge unattended, majors included",
+      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "googletest is pinned by URL via CMake FetchContent, which has no native manager",
+      "managerFilePatterns": ["/^cpp/CMakeLists\\.txt$/"],
+      "matchStrings": [
+        "google/googletest/archive/refs/tags/(?<currentValue>v[0-9.]+)\\.zip"
+      ],
+      "depNameTemplate": "google/googletest",
+      "datasourceTemplate": "github-tags"
+    }
+  ]
+}

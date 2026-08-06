@@ -46,3 +46,18 @@ jobs:
         run: |
           devcontainer exec --workspace-folder . --config ${{ matrix.devcontainer }} make verify
 
+  # Single stable check name for branch protection to require. The verify-job
+  # names include the devcontainer path, so they change whenever a devcontainer
+  # is added or removed and can't be required by name.
+  verify-complete:
+    if: always()
+    runs-on: ubuntu-latest
+    needs:
+      - discovery-job
+      - verify-job
+    steps:
+      - name: Check results
+        run: |
+          [ "${{ needs.discovery-job.result }}" = "success" ] || exit 1
+          [ "${{ needs.verify-job.result }}" = "success" ] || exit 1
+
