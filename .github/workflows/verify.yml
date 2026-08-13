@@ -13,7 +13,7 @@ jobs:
       devcontainers: ${{ steps.discover-containers.outputs.devcontainers }}
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Discover devcontainers
         id: discover-containers
@@ -29,7 +29,7 @@ jobs:
        devcontainer: ${{ fromJson(needs.discovery-job.outputs.devcontainers) }}
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Set up devcontainer CLI
         run: npm install --global @devcontainers/cli
