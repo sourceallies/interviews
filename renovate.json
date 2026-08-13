@@ -17,8 +17,20 @@
   "packageRules": [
     {
       "description": "These exercises are small starter shells, so anything that survives the full devcontainer matrix is good enough to merge unattended, majors included",
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest"
+      ],
       "automerge": true
+    },
+    {
+      "description": "Pinning rewrites a range or tag to the exact version already resolved, so there is no newly published code to age. Renovate does not attach a releaseTimestamp to pin/pinDigest updates (renovatebot/renovate#40288), and Renovate 42 defaults minimumReleaseAgeBehaviour to timestamp-required, so a missing timestamp leaves renovate/stability-days pending forever",
+      "matchUpdateTypes": ["pin", "pinDigest"],
+      "minimumReleaseAge": null
     }
   ],
   "customManagers": [
