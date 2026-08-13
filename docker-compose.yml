@@ -1,7 +1,7 @@
 version: '3'
 services:
   postgres:
-    image: postgres:bookworm
+    image: postgres:bookworm@sha256:7d2695c3aa88e792e8b3b233e7e4adb296a20412c6c0ca361e3edaaacfada108
     ports:
       - 5432:5432
     environment:
@@ -14,7 +14,7 @@ services:
 
   # AWS resources we use the SDK to interact with. Currently S3 & SQS
   localstack:
-    image: localstack/localstack:2.3.2
+    image: localstack/localstack:2.3.2@sha256:c396d899a3cdc038ba6bb82d54a40f12c037004b93c3e1efc4c821db60306f79
     environment:
       - LOCALSTACK_SERVICES=s3,sqs
       - LS_LOG=info
