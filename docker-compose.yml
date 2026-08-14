@@ -14,7 +14,7 @@ services:
 
   # AWS resources we use the SDK to interact with. Currently S3 & SQS
   localstack:
-    image: localstack/localstack:2.3.2@sha256:c396d899a3cdc038ba6bb82d54a40f12c037004b93c3e1efc4c821db60306f79
+    image: localstack/localstack:4.14.0@sha256:3ebc37595918b8accb852f8048fef2aff047d465167edd655528065b07bc364a
     environment:
       - LOCALSTACK_SERVICES=s3,sqs
       - LS_LOG=info
