@@ -8,11 +8,11 @@ authors = ["Jake Williamson"]
 python = "^3.10.8"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "9.0.3"
-pylint = "4.0.2"
-coverage = "7.13.4"
-mypy = "1.19.0"
-black = "26.3.1"
+pytest = "9.1.1"
+pylint = "4.0.6"
+coverage = "7.15.2"
+mypy = "1.20.2"
+black = "26.5.1"
 flake8 = "7.3.0"
 
 [build-system]
