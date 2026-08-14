@@ -28,6 +28,11 @@
       "automerge": true
     },
     {
+      "description": "@vitejs/* plugins declare a hard peer dependency on the matching vite major, but they ship from vitejs/vite-plugin-react rather than vitejs/vite, so Renovate's monorepo presets group by source repo and never pair them. Split across two PRs, whichever lands first fails npm ci on an ERESOLVE peer conflict",
+      "matchPackageNames": ["vite", "@vitejs/**"],
+      "groupName": "vite"
+    },
+    {
       "description": "Pinning rewrites a range or tag to the exact version already resolved, so there is no newly published code to age. Renovate does not attach a releaseTimestamp to pin/pinDigest updates (renovatebot/renovate#40288), and Renovate 42 defaults minimumReleaseAgeBehaviour to timestamp-required, so a missing timestamp leaves renovate/stability-days pending forever",
       "matchUpdateTypes": ["pin", "pinDigest"],
       "minimumReleaseAge": null
