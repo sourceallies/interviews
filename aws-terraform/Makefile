@@ -1,14 +1,24 @@
-init:
-	terraform init
+# Terraform
 
-verify:
-	tflint
-	terraform test
+tf-init:
+	cd terraform && terraform init
 
-plan:
-	terraform plan
+tf-verify:
+	cd terraform && tflint
+	cd terraform && terraform test
 
-apply:
-	terraform apply
+tf-plan:
+	cd terraform && terraform plan
 
-.PHONY: init verify plan apply
+tf-apply:
+	cd terraform && terraform apply
+
+# TypeScript
+
+ts-init:
+	npm ci
+
+ts-verify:
+	npm test
+
+.PHONY: tf-init tf-verify tf-plan tf-apply ts-init ts-verify

@@ -1,0 +1,15 @@
+{
+  "name": "typescript-interview",
+  "version": "1.0.0",
+  "description": "TypeScript Interview",
+  "type": "module",
+  "scripts": {
+    "test": "jest --testRegex .*.spec.ts"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.9.2"
+  }
+}
