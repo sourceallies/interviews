@@ -18,3 +18,10 @@ flake8 = "7.3.0"
 [build-system]
 requires = ["poetry-core>=1.4.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pylint."messages control"]
+disable = [
+    "missing-module-docstring",   # C0114
+    "missing-class-docstring",    # C0115
+    "missing-function-docstring", # C0116
+]
